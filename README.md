@@ -1,8 +1,8 @@
 # Dux QuickStart
 
-Want to get started with [Dux](https://github.com/asbjornenge/dux) from the comforst of your own laptop?
+Want to get started with [Dux](https://github.com/asbjornenge/dux)? From the comforts of your own laptop? You can! It's easy!
 
-Follow these simple steps :tada:
+Follow these simple steps:
 
 ## Requirements
 
