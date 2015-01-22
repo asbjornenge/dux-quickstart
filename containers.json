@@ -1,0 +1,13 @@
+[
+    {
+        "id"    : "dns",
+        "image" : "asbjornenge/rainbow-dock",
+        "cmd"   : "--domain dux.test --dnshost 0.0.0.0 --apihost 0.0.0.0 --fwdhost 8.8.8.8 --ttl 10 --ipv4-for-ipv6",
+        "ports" : ["8080:8080","53:53"]
+    },
+    {
+        "id"      : "dns-populator",
+        "image"   : "asbjornenge/rainbow-dock-populator",
+        "cmd"     : "--dockerhost unix:///var/run/docker.sock --apihost 0.0.0.0:8080"
+    }
+]
