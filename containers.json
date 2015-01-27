@@ -2,13 +2,13 @@
     {
         "id"    : "rainbow-dock",
         "image" : "asbjornenge/rainbow-dock",
-        "cmd"   : "--domain dux.test --dnshost 0.0.0.0 --apihost 0.0.0.0 --fwdhost 8.8.8.8 --ttl 10 --ipv4-for-ipv6",
-        "ports" : ["8080:8080","53:53/tcp","53:53/udp"]
+        "cmd"   : "--domain dux.test --dnshost 0.0.0.0 --apihost 0.0.0.0 --apiport 9000 --fwdhost 8.8.8.8 --ttl 10 --ipv4-for-ipv6",
+        "ports" : ["9000:9000","53:53/tcp","53:53/udp"]
     },
     {
         "id"      : "rainbow-dock-populator",
         "image"   : "asbjornenge/rainbow-dock-populator",
-        "cmd"     : "--dockerhost unix:///var/run/docker.sock --apihost 172.17.42.1:8080",
+        "cmd"     : "--dockerhost ${DOCKER_HOST} --apihost 172.17.42.1:9000",
         "volumes" : ["/var/run/docker.sock:/var/run/docker.sock"] 
     },
     {
