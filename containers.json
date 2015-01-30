@@ -1,7 +1,7 @@
 [
     {
         "id"    : "rainbow-dock",
-        "image" : "asbjornenge/rainbow-dock",
+        "image" : "asbjornenge/rainbow-dock:3.0.1",
         "cmd"   : "--domain ${DOMAIN} --dnshost 0.0.0.0 --apihost 0.0.0.0 --apiport 9000 --fwdhost 8.8.8.8 --ttl 10 --ipv4-for-ipv6",
         "ports" : ["9000:9000","53:53/tcp","53:53/udp"]
     },
@@ -13,5 +13,10 @@
     {
         "id"      : "dispatcher",
         "image"   : "asbjornenge/dux-dispatcher:1.0.0"
+    },
+    {
+        "id"      : "statestore",
+        "image"   : "asbjornenge/dux-statestore:1.0.0",
+        "env"     : ["FIREBASE_URL=${FIREBASE_URL}","FIREBASE_SECRET=${FIREBASE_SECRET}"]
     }
 ]
