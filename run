@@ -1,2 +1,0 @@
-#!/bin/bash
-cdi run --env DUX_DOMAIN=dux.test --var DOMAIN=dux.test --var DOCKER_HOST=172.17.42.1 --var DOCKER_PORT=4343 containers.json | sh

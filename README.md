@@ -12,4 +12,13 @@ Follow these simple steps:
 
 ## Liftoff :rocket:
 
-Coming..
+    cdi run 
+        --env DUX_DOMAIN=<domain> 
+        --dns <dns-host>
+        --var DOMAIN=<domain>
+        --var DOCKER_HOST=<docker-host> 
+        --var DOCKER_PORT=<docker-port> 
+        --var FIREBASE_URL=<firebase-url> 
+        --var FIREBASE_SECRET=<firebase-secret> 
+        containers.json
+
