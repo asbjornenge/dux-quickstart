@@ -16,7 +16,13 @@
     },
     {
         "id"      : "statestore",
-        "image"   : "asbjornenge/dux-statestore:1.0.0",
+        "image"   : "asbjornenge/dux-statestore",
         "env"     : ["FIREBASE_URL=${FIREBASE_URL}","FIREBASE_SECRET=${FIREBASE_SECRET}"]
+    },
+    {
+        "id"      : "scheduler",
+        "image"   : "asbjornenge/dux-scheduler",
+        "cmd"     : "--dispatcher-host dux-dispatcher.${DOMAIN} --dispatcher-port 8000 --statestore-host dux-statestore.${DOMAIN} --statestore-port 8000",
+        "volumes" : ["${DOCKER_BIN}:/usr/local/bin/docker"]
     }
 ]
