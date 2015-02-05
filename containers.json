@@ -12,7 +12,8 @@
     },
     {
         "id"      : "dispatcher",
-        "image"   : "asbjornenge/dux-dispatcher:1.0.0"
+        "image"   : "asbjornenge/dux-dispatcher",
+        "cmd"     : "--port 8000"
     },
     {
         "id"      : "statestore",
