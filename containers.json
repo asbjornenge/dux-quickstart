@@ -18,7 +18,8 @@
     {
         "id"      : "statestore",
         "image"   : "asbjornenge/dux-statestore",
-        "env"     : ["FIREBASE_URL=${FIREBASE_URL}","FIREBASE_SECRET=${FIREBASE_SECRET}"]
+        "env"     : ["FIREBASE_URL=${FIREBASE_URL}","FIREBASE_SECRET=${FIREBASE_SECRET}"],
+        "cmd"     : "--dispatcher-host dux-dispatcher.${DOMAIN} --dispatcher-port 8000"
     },
     {
         "id"      : "scheduler",
