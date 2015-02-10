@@ -23,7 +23,6 @@
     {
         "id"      : "scheduler",
         "image"   : "asbjornenge/dux-scheduler",
-        "cmd"     : "--dispatcher-host dux-dispatcher.${DOMAIN} --dispatcher-port 8000 --statestore-host dux-statestore.${DOMAIN} --statestore-port 8000",
-        "volumes" : ["${DOCKER_BIN}:/usr/local/bin/docker"]
+        "cmd"     : "--dispatcher-host dux-dispatcher.${DOMAIN} --dispatcher-port 8000 --statestore-host dux-statestore.${DOMAIN} --statestore-port 8000"
     }
 ]
