@@ -22,7 +22,7 @@ First, let's install some required tools. We are going to use the [cdi](https://
 
 Dux is an architecture intended for multi-host (even multi-cloud) deployments. In this type of scenario we need to talk to the docker daemon over the wire. You probably can get this to work with a unix socket, mounting volumes and things; I'll leave it to you to figure that out if you really really want to :stuck_out_tongue_closed_eyes:. Let's [bind the docker daemon to a tcp host:port](https://docs.docker.com/articles/basics/#bind-docker-to-another-hostport-or-a-unix-socket). 
 
-If you are running docker as a service; exactly how to modify the docker configuration differ between distributions so I won't go into details about it. Google is your friend :smile:
+If you are running docker as a service; exactly how to modify the docker configuration differ between distributions so I won't go into details about it. Google is your friend.
 
 ### Firebase :fire:
 
