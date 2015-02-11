@@ -30,7 +30,7 @@ The [dux-statestore](https://github.com/asbjornenge/dux-statestore) stores it's 
 
 ### Service discovery
 
-We need some way for our Dux services (and application services) to discover each other. This implementation of Dux uses DNS based service discovery, just like the internet. It has the advantage that most applications don't need to change to leverage it. We are going to use [rainbow-dock](https://github.com/asbjornenge/rainbow-dock) :rainbow: 
+We need some way for our Dux services (and application services) to discover each other. This implementation of Dux uses DNS based service discovery, just like the internet. It has the advantage that applications don't need to change to leverage it. We are going to use [rainbow-dock](https://github.com/asbjornenge/rainbow-dock) :rainbow: 
 
 ### Containers
 
