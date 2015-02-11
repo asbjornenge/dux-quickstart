@@ -106,4 +106,12 @@ Now things should start happening on the scheduler! Don't worry if you see some 
 
 ![scheduler_kill_containers](scheduler_kill_containers.png)
 
-Yellow for kill, red for remove.
+Yellow for kill, red for remove. :tada:
+
+## End of the road 
+
+And that's about as far as this quickstart will take you.
+
+I hope you play around, experiment and contribute! The implementation is still very crude & fragile. Both the **Scheduler** and the **StateStore** needs work. Maybe even a re-implementation. And there are lots of other dux-tools to make. Your imagination is the limit!
+
+enjoy.
