@@ -85,3 +85,25 @@ Let' see how the **Scheduler** is doing.
 The scheduler is reporting ready too, but as we can see, it's looking for the state **/containers** and **/hosts** that it currently can't find.
 
 Let's add it!
+
+You can add nested objects to firebase objects by clicking the little green +. The *0* indidates that this is the first element in an array.
+
+![firebase_add_hosts](firebase_add_hosts.png)
+
+Notice the statestore picked up the new state and distributed it.
+
+![statestore_distribute_hosts](statestore_distribute_hosts.png)
+
+The scheduler is still quiet, it needs some containers too!
+
+![firebase_add_containers](firebase_add_containers.png)
+
+Now things should start happening on the scheduler! Don't worry if you see some blank output while pulling the image. It's a bug in the docker cli that should be fixed i 1.4. Once the image is pulled the scheduler will start 5 elasticsearch containers!
+
+![scheduler_run_containers](scheduler_run_containers.png)
+
+5 might be a bit too much, so let's scale that down. Just modify the state in firebase and watch the :sparkles: unfold.
+
+![scheduler_kill_containers](scheduler_kill_containers.png)
+
+Yellow for kill, red for remove.
