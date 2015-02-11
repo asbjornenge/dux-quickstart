@@ -26,7 +26,7 @@ If you are running docker as a service; exactly how to modify the docker configu
 
 ### Firebase :fire:
 
-The [dux-statestore](https://github.com/asbjornenge/dux-statestore) stores it's state in a [firebase](https://www.firebase.com/). This is mostly for convenience but it also enables some cool things like multi-cloud and dashboard GUIs. They are free for development puposes, so go ahead and make one. You will need the **url** and the **secret**.
+The [dux-statestore](https://github.com/asbjornenge/dux-statestore) stores it's state in a [firebase](https://www.firebase.com/). This is mostly for convenience but it also enables some cool things like multi-cloud and GUIs. They are free for development puposes, so go ahead and make one. You will need the **url** and the **secret**.
 
 ### Service discovery
 
