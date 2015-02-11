@@ -12,9 +12,9 @@ Want to get started with [Dux](https://github.com/asbjornenge/dux)? From the com
 
 ## Getting ready
 
-### Tooling
+### Tools
 
-First, let's install some required tools. We are going to use the [cdi](https://www.npmjs.com/package/cccf-docker-instructions) cli tool to run the containers defined in [containers.json](https://raw.githubusercontent.com/asbjornenge/dux-quickstart/master/containers.json) file.
+First, let's install some required tools. We are going to use the [cdi](https://www.npmjs.com/package/cccf-docker-instructions) cli to run the containers defined in [containers.json](https://raw.githubusercontent.com/asbjornenge/dux-quickstart/master/containers.json) file.
 
     npm install -g cccf-docker-instructions
 
