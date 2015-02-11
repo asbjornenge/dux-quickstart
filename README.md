@@ -86,7 +86,7 @@ The scheduler is reporting ready too, but as we can see, it's looking for the st
 
 Let's add it!
 
-You can add nested objects to firebase objects by clicking the little green +. The *0* indidates that this is the first element in an array.
+You can add nested objects to firebase by clicking the little green +. The *0* indidates that this is the first element in an array.
 
 ![firebase_add_hosts](firebase_add_hosts.png)
 
