@@ -70,3 +70,15 @@ If all goes well, you should have 5 containers running.
 If not; [log an issue](https://github.com/asbjornenge/dux-quickstart/issues).
 
 ## Manipulate State
+
+Now that we have our Dux containers up and running, let's add some state!
+
+First, let's verify that they are ready.
+
+![statestore_log1](statestore_log1.png)
+
+As you can see, they initially have some trouble resolving each other's addresses. But after a short while the DNS service is up and populated, and they are ready.
+
+![scheduler_log1](scheduler_log1.png)
+
+The scheduler is reporting ready too, but as we can see, it's looking for some state **/containers** and **/hosts** that it currently can't find.
