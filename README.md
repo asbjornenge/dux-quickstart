@@ -1,6 +1,6 @@
 # Dux QuickStart
 
-> WARNING: The dux ref. implementation is still quite fragile and constantly changing
+> WARNING: The Dux ref. implementation is still quite fragile and constantly changing.
 
 Want to get started with [Dux](https://github.com/asbjornenge/dux)? From the comforts of your own laptop? You can! It's easy!
 
@@ -32,15 +32,13 @@ The [dux-statestore](https://github.com/asbjornenge/dux-statestore) stores it's 
 
 We need some way for our Dux services (and application services) to discover each other. This implementation of Dux uses DNS based service discovery, just like the internet. It has the advantage that most applications don't need to change to leverage it. We are going to use [rainbow-dock](https://github.com/asbjornenge/rainbow-dock) :rainbow: 
 
-Alright, I think thats it!? Oh wait, one more thing...
-
 ### Containers
 
 All the containers required to run Dux are described in the [containers.json](https://raw.githubusercontent.com/asbjornenge/dux-quickstart/master/containers.json) file in this repository. Go ahead and download it.
 
     wget https://raw.githubusercontent.com/asbjornenge/dux-quickstart/master/containers.json
 
-Alright, your ready?
+Alright, I think thats about it! You ready?
 
 ![popcorn](http://i.giphy.com/UlW9P3FfFEkXS.gif)
 
@@ -57,4 +55,18 @@ Let's run those containers!!
         --var FIREBASE_SECRET=<firebase-secret>    // The secret to the firebase you created
         containers.json
 
-PS! Dux has a scheduler. If you have any other containers running, the scheduler will kill and remove them! Now might be a good time to stop them :+1: 
+**PS!** If you have any other containers running, now would be a good time to stop them. Dux has a scheduler component that will kill and remove any containers it does not know about.
+
+If all goes well, you should have 5 containers running.
+
+    $ docker ps
+    CONTAINER ID        IMAGE                                       ..   NAMES
+    172bf1db3feb        asbjornenge/dux-statestore:latest           ..   statestore               
+    3324085b06ff        asbjornenge/dux-scheduler:latest            ..   scheduler                
+    f08f039e09d3        asbjornenge/dux-dispatcher:latest           ..   dispatcher               
+    c2a039b111f8        asbjornenge/rainbow-dock-populator:latest   ..   rainbow-dock-populator   
+    6ae0d008188a        asbjornenge/rainbow-dock:3.0.1              ..   rainbow-dock  
+
+If not; [log an issue](https://github.com/asbjornenge/dux-quickstart/issues).
+
+## Manipulate State
