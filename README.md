@@ -77,8 +77,11 @@ First, let's verify that the **StateStore** is ready.
 
 ![statestore_log1](statestore_log1.png)
 
-As you can see, it initially has some trouble resolving other services ip addresses, but after a short while the DNS service is up and populated, and they are ready. Let' see how the **Scheduler** is doing.
+As you can see, it initially has some trouble resolving other services ip addresses, but after a short while the DNS service is up and populated, and they are ready.  
+Let' see how the **Scheduler** is doing.
 
 ![scheduler_log1](scheduler_log1.png)
 
 The scheduler is reporting ready too, but as we can see, it's looking for the state **/containers** and **/hosts** that it currently can't find.
+
+Let's add it!
