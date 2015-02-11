@@ -6,9 +6,9 @@ Want to get started with [Dux](https://github.com/asbjornenge/dux)? From the com
 
 ## Requirements
 
-* docker
-* node/io.js
-* npm
+* [docker](https://www.docker.com/)
+* [node/io.js](https://iojs.org/en/index.html)
+* [npm](https://www.npmjs.com/)
 
 ## Getting ready
 
