@@ -7,22 +7,22 @@
     },
     {
         "id"      : "rainbow-dock-populator",
-        "image"   : "asbjornenge/rainbow-dock-populator",
+        "image"   : "asbjornenge/rainbow-dock-populator:1.1.0",
         "cmd"     : "--dockerhost tcp://${DOCKER_HOST}:${DOCKER_PORT} --apihost ${DOCKER_HOST}:9000"
     },
     {
         "id"      : "dispatcher",
-        "image"   : "asbjornenge/dux-dispatcher",
+        "image"   : "asbjornenge/dux-dispatcher:1.0.0",
         "cmd"     : "--port 8000"
     },
     {
         "id"      : "statestore",
-        "image"   : "asbjornenge/dux-statestore",
+        "image"   : "asbjornenge/dux-statestore:1.0.0",
         "cmd"     : "--firebase-url ${FIREBASE_URL} --firebase-secret ${FIREBASE_SECRET} --dispatcher-host dux-dispatcher.${DOMAIN} --dispatcher-port 8000 --color"
     },
     {
         "id"      : "scheduler",
-        "image"   : "asbjornenge/dux-scheduler",
+        "image"   : "asbjornenge/dux-scheduler:1.0.0",
         "cmd"     : "--dispatcher-host dux-dispatcher.${DOMAIN} --dispatcher-port 8000 --statestore-host dux-statestore.${DOMAIN} --statestore-port 8000 --ignore rainbow-dock --ignore rainbow-dock-populator --ignore dispatcher --ignore statestore --ignore scheduler --color"
     }
 ]
