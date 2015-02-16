@@ -23,6 +23,6 @@
     {
         "id"      : "scheduler",
         "image"   : "asbjornenge/dux-scheduler",
-        "cmd"     : "--dispatcher-host dux-dispatcher.${DOMAIN} --dispatcher-port 8000 --statestore-host dux-statestore.${DOMAIN} --statestore-port 8000 --color"
+        "cmd"     : "--dispatcher-host dux-dispatcher.${DOMAIN} --dispatcher-port 8000 --statestore-host dux-statestore.${DOMAIN} --statestore-port 8000 --ignore rainbow-dock --ignore rainbow-dock-populator --ignore dispatcher --ignore statestore --ignore scheduler --color"
     }
 ]
